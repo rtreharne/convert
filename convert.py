@@ -15,7 +15,8 @@ def inputType(string):
 
 def extractInfo(string):
     # split string on 'is'
-    splitStr = strong.split('is')
+    splitStr = string.split('is')
+    return splitStr
 
 
 
@@ -23,8 +24,8 @@ def extractInfo(string):
 # TODO function to learn from info statement
 
 if __name__ == "__main__":
-  if sys.argv[1]:
-      inputString = sys.argv[1]
-      print(inputType(inputString))
-  else:
-      print('Please provide input')
+
+    inputString = input('Please input here: ')
+    if inputType(inputString):
+        print(extractInfo(inputString))
+
