@@ -1,3 +1,5 @@
+import numpy as np
+
 numerals = [
         {'letter': 'M', 'value': 1000},
         {'letter': 'D', 'value': 500},
